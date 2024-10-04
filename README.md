@@ -4,7 +4,7 @@ Say you are given a task to implement the client-side of a network application d
 
 The description of the application and its application layer protocol is provided below. 
 
-
+ 
 ## **Overview**
 
 The application concerns the remote evaluation of simple arithmetical expressions using only one of the operators +, -, *, and / (no parenthesis or other operators). Examples: 3 + 5, 5 * 8, etc. After an initial greeting message used by your client to start the connection to the server, the server asks your client to evaluate a (server-chosen, unspecified) number of expressions one after the other. Each of these expressions will be sent as a separate message. For each expression message, the server expects a response message containing the result of the evaluation of the expression. If your program can correctly evaluate all the expressions, then the server will return a secret flag to the client. This flag is unique to each student and should be saved for submission (see Section Submission). The message containing the flag will signify the end of the communication session. At this point, the client can close the connection to the server, and the application terminates. 
